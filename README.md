@@ -10,14 +10,15 @@
 | **爸爸**(GitHub `nmymdf`,本 repo 擁有者) | 想功能、試用;**Android 版**與電腦網頁版,由他的 Claude(雲端 Claude Code)開發與打包 APK | 沒有 iPhone、沒有 Mac |
 | **Jay**(兒子,GitHub `jaykuo0619`) | **iPhone / iPad 版**:由他 Mac 上的 Claude Code 照交接文件移植、用 Xcode 編譯、TestFlight / App Store 上架 | 有 Mac、有 Apple 開發者帳號 |
 
+- **預設只做 Android,不做 iPhone 版。** 只有在該 App 的 `CLAUDE.md` 寫「iPhone 版:需要」,或爸爸說要做 iPhone 版時,才處理 iPhone 的事(讀 `iPhone交接.md`、準備給 Jay 的文件)。沒寫的 App,不要提 iPhone、不要產生 iPhone 文件。
 - **爸爸不需要、也不能編譯 iPhone 版**。不要叫他裝 Xcode、不要說「你沒辦法編譯 iPhone app」;iPhone 的事一律變成**給 Jay 的交接文件**(見 `iPhone交接.md`)。
 - Android 這邊的 Claude **不寫 iOS 程式**、不動 `ios/`;Jay 那邊的 Claude 不動 Android 的程式。兩邊靠 repo 裡的文件溝通。
 
 ## 2. 每次 Android 出新版,自動要做的事
 
 1. 打包正式版 APK、驗證簽章,傳給爸爸(方法見 `打包APK.md`)。
-2. **只要有使用者看得到的行為改變,就同步更新給 Jay 的交接文件**:該 App repo 的 `docs/IOS_PORT.md`(規格)與 `docs/IOS_TODO.md`(待辦勾選清單),一起 push。不用等爸爸開口。
-3. 回報時用一兩句話說「iPhone 要跟著改的已經寫進 IOS_TODO.md」,爸爸轉告 Jay 即可。
+2. **(只限「iPhone 版:需要」的 App)** 只要有使用者看得到的行為改變,就同步更新給 Jay 的交接文件:該 App repo 的 `docs/IOS_PORT.md`(規格)與 `docs/IOS_TODO.md`(待辦勾選清單),一起 push。不用等爸爸開口。
+3. (同上)回報時用一兩句話說「iPhone 要跟著改的已經寫進 IOS_TODO.md」,爸爸轉告 Jay 即可。
 4. 多個版本(Android、iPhone、網頁)之間互傳的**檔案格式**:能不改就不改;要改先問爸爸,並在 IOS_TODO.md 標明。
 
 ## 3. 跟爸爸溝通
@@ -41,13 +42,13 @@
 |---|---|
 | `README.md` | 每次開工(就是這份) |
 | `打包APK.md` | 要做 Android APK 給人安裝時 |
-| `iPhone交接.md` | 要讓 Jay 做 iPhone 版(新 App 第一次,或之後每次更新) |
+| `iPhone交接.md` | **只在需要 iPhone 版時**:該 App 的 `CLAUDE.md` 寫「iPhone 版:需要」,或爸爸說要做 |
 | `新App的CLAUDE.md範本.md` | 開新 App 時,照這個建立該 repo 的 `CLAUDE.md` |
 
 ## 6. 目前的 App
 
-| App | Repo | 狀態 |
-|---|---|---|
-| 卡溜趴(旅遊記帳+行程) | `nmymdf/travel-ledger`(分支 `claude/confident-volta-6rsegv`);iPhone 在 `jaykuo0619/travel-ledger` 的 `ios` 分支 | Android v0.10.6、iPhone 1.0.0 |
+| App | Repo | iPhone 版 | 狀態 |
+|---|---|---|---|
+| 卡溜趴(旅遊記帳+行程) | `nmymdf/travel-ledger`(分支 `claude/confident-volta-6rsegv`);iPhone 在 `jaykuo0619/travel-ledger` 的 `ios` 分支 | 需要 | Android v0.10.6、iPhone 1.0.0 |
 
 新增 App 時在這張表加一行。

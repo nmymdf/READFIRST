@@ -1,5 +1,7 @@
 # 讓 Jay 做 iPhone 版:交接方式
 
+> **只有需要 iPhone 版的 App 才讀這份**:該 App 的 `CLAUDE.md` 寫「iPhone 版:需要」,或爸爸說要做。其他 App 不用理會。
+
 > 爸爸沒有 Mac 和 iPhone 開發環境,iPhone 版一律由 Jay 用他 Mac 上的 Claude Code 完成。Android 這邊的 Claude 負責**把 Jay 需要的資訊寫進 App 的 repo**,爸爸只要轉告一句話。
 
 ## 新 App 第一次要做 iPhone 版
